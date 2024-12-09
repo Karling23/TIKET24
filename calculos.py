@@ -25,4 +25,15 @@ def determinarResultadosIMC(imc):
         return "Obesidad Grado 2"
     elif imc >= 40:
         return "Obesidad Grado 3"
-
+def encontrarMayor(a, b, c):
+    return max(a, b, c)
+    
+def calcularEdad(anioNacimiento):
+    import datetime
+    anioActual = datetime.now().year
+    
+    if anioNacimiento < 0 or anioNacimiento > anioActual:
+        return -1
+    
+    edad = anioActual - anioNacimiento
+    return edad
